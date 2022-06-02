@@ -1,4 +1,4 @@
-# Skifree.js
+# SkiPepe.js
 
 This is a **work in progress** JavaScript port of the popular 1991 PC game [SkiFree](http://en.wikipedia.org/wiki/Skifree) by [Chris Pirih](http://ski.ihoc.net/).
 
