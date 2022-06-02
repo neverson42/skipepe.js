@@ -977,7 +977,7 @@ var Sprite = require('./sprite');
 			sEast: function(xDiff) { return xDiff > 0; },
 			sWest: function(xDiff) { return xDiff <= 0; }
 		};
-		var standardSpeed = 3;
+		var standardSpeed = Number.random(3,5); //slightly randomized snowboarder speeds. originally = 3
 
 		that.setSpeed(standardSpeed);
 
@@ -1895,7 +1895,7 @@ this.exports = window;
 	sprites.jump.hitBehaviour.skier = jumpHitsSkierBehaviour;
 
 // Really not a fan of this behaviour.
-/*	function skierHitsThickSnowBehaviour(skier, thickSnow) {
+	function skierHitsThickSnowBehaviour(skier, thickSnow) {
 		// Need to implement this properly
 		skier.setSpeed(2);
 		setTimeout(function() {
@@ -1909,9 +1909,9 @@ this.exports = window;
 		setTimeout(function() {
 			skier.resetSpeed();
 		}, 300);
-	}*/
+	}
 
-	// sprites.thickSnow.hitBehaviour.skier = thickSnowHitsSkierBehaviour;
+	 sprites.thickSnow.hitBehaviour.skier = thickSnowHitsSkierBehaviour;
 
 	function snowboarderHitsSkierBehaviour(snowboarder, skier) {
 		skier.hasHitObstacle(snowboarder);
